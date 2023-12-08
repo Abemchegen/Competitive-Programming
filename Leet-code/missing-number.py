@@ -1,11 +1,10 @@
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
         
-        for i in range(len(nums)+1):
-            if i not in nums:
-                ans=i
-                break
-        return ans
+       total=sum(nums)
+       n=len(nums)
+       truetotal=(n*n + n)//2
+       return truetotal - total
 
 
 
